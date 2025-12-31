@@ -13,11 +13,13 @@
       "@/*": ["./src/*"],
       "@components/layout": ["./src/exports/components/layout"],
       "@components/page": ["./src/exports/components/page"],
+      "@components/shared": ["./src/exports/components/shared"],
       "@library/contexts": ["./src/exports/library/contexts"],
       "@library/hooks": ["./src/exports/library/hooks"],
       "@library/providers": ["./src/exports/library/providers"],
       "@styles/layout": ["./src/exports/styles/layout"],
-      "@styles/page": ["./src/exports/styles/page"]
+      "@styles/page": ["./src/exports/styles/page"],
+      "@styles/shared": ["./src/exports/styles/shared"]
     },
     "plugins": [
       {
