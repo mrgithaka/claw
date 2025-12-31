@@ -11,7 +11,10 @@
     "noEmit": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@components/page": ["./src/exports/components/page"]
+      "@components/layout": ["./src/exports/components/layout"],
+      "@components/page": ["./src/exports/components/page"],
+      "@styles/layout": ["./src/exports/styles/layout"],
+      "@styles/page": ["./src/exports/styles/page"]
     },
     "plugins": [
       {
