@@ -1,12 +1,25 @@
+'use client';
+
 import { Header, Main } from '@components/layout';
+import { ModeProvider, ThemeProvider } from '@library/providers';
 import { HeaderStyles, MainStyles } from '@styles/layout';
 import { PageStyles } from '@styles/page';
+import { ReactNode } from 'react';
 
-export default function Page() {
+interface Props {
+  headerItems?: ReactNode;
+  mainItems?: ReactNode;
+}
+
+export default function Page({ headerItems, mainItems }: Props) {
   return (
-    <div className={PageStyles.Page}>
-      <Header className={HeaderStyles.Page} />
-      <Main className={MainStyles.Page} />
-    </div>
+    <ModeProvider>
+      <ThemeProvider>
+        <div className={PageStyles.Page}>
+          <Header className={HeaderStyles.Page}>{headerItems}</Header>
+          <Main className={MainStyles.Page}>{mainItems}</Main>
+        </div>
+      </ThemeProvider>
+    </ModeProvider>
   );
 }
