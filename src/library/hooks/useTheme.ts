@@ -1,11 +1,11 @@
-import { ModeContext, ModeContextProps } from '@library/contexts';
+import { ThemeContext, ThemeContextProps } from '@library/contexts';
 import { useContext } from 'react';
 
-export default function useMode(): ModeContextProps {
-  const context = useContext(ModeContext);
+export default function useTheme(): ThemeContextProps {
+  const context = useContext(ThemeContext);
 
   if (!context) {
-    throw new Error('`useMode` must be used within a `ModeProvider`.');
+    throw new Error('`useTheme` must be used within a `ThemeProvider`.');
   }
 
   return context;
