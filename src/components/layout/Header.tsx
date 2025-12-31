@@ -1,11 +1,16 @@
+import { Nav } from '@components/layout';
 import { HeaderStyles } from '@styles/layout';
+import { ReactNode } from 'react';
 
 interface Props {
   className?: string;
+  children?: ReactNode;
 }
 
-export default function Header({ className }: Props) {
+export default function Header({ className, children }: Props) {
   return (
-    <header className={`${HeaderStyles.Header} ${className || ''}`}></header>
+    <header className={`${HeaderStyles.Header} ${className || ''}`}>
+      <Nav>{children}</Nav>
+    </header>
   );
 }
