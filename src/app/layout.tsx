@@ -1,4 +1,4 @@
-import { gantari } from '@/exports/fonts/variable';
+import { gantari } from '@fonts/variable';
 import '../styles/global.css';
 
 export default function RootLayout({
