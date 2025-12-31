@@ -13,6 +13,9 @@
       "@/*": ["./src/*"],
       "@components/layout": ["./src/exports/components/layout"],
       "@components/page": ["./src/exports/components/page"],
+      "@library/contexts": ["./src/exports/library/contexts"],
+      "@library/hooks": ["./src/exports/library/hooks"],
+      "@library/providers": ["./src/exports/library/providers"],
       "@styles/layout": ["./src/exports/styles/layout"],
       "@styles/page": ["./src/exports/styles/page"]
     },
