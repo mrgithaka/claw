@@ -1,13 +1,4 @@
 {
-  "name": "mrgithaka",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
   "dependencies": {
     "next": "16.1.1",
     "react": "19.2.3",
@@ -27,5 +18,14 @@
     "semantic-release": "^25.0.2",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "name": "claw",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "eslint",
+    "start": "next start"
+  },
+  "version": "0.1.0"
 }
