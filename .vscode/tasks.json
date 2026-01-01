@@ -1,8 +1,8 @@
 {
   "options": {
     "env": {
-      "COMMITS_LOG_PATH": ".mrgithaka/trash/commits.log",
-      "DIFF_LOG_PATH": ".mrgithaka/trash/diff.log"
+      "COMMITS_LOG_PATH": ".claw/tmp/commits.log",
+      "DIFF_LOG_PATH": ".claw/tmp/diff.log"
     }
   },
   "tasks": [
