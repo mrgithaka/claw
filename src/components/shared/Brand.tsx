@@ -6,8 +6,8 @@ export default function Brand() {
     <div className={BrandStyles.Brand}>
       <Icon
         name='logo'
-        alt="Mr. Githaka's Logo"
-        size={28}
+        alt="Volty's Logo"
+        size={24}
       />
       <p>Claw</p>
     </div>
