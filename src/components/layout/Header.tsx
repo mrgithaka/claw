@@ -1,4 +1,3 @@
-import { Nav } from '@components/layout';
 import { HeaderStyles } from '@styles/layout';
 import { ReactNode } from 'react';
 
@@ -10,7 +9,7 @@ interface Props {
 export default function Header({ className, children }: Props) {
   return (
     <header className={`${HeaderStyles.Header} ${className || ''}`}>
-      <Nav>{children}</Nav>
+      {children}
     </header>
   );
 }
