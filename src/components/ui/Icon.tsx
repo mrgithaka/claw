@@ -1,7 +1,7 @@
 'use client';
 
 import { useIcon } from '@library/hooks';
-import { IconStyles } from '@styles/shared';
+import { IconStyles } from '@styles/ui';
 import Image from 'next/image';
 
 export interface Props {

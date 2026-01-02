@@ -1,4 +1,4 @@
-import { NavGroupStyles } from '@styles/shared';
+import { NavGroupStyles } from '@styles/ui';
 import { ReactNode } from 'react';
 
 interface Props {

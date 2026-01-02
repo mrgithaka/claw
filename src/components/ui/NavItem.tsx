@@ -1,5 +1,5 @@
-import { Icon, IconProps } from '@components/shared';
-import { NavItemStyles } from '@styles/shared';
+import { Icon, IconProps } from '@components/ui';
+import { NavItemStyles } from '@styles/ui';
 import Link from 'next/link';
 
 interface Props {

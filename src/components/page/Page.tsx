@@ -2,7 +2,7 @@
 
 import { Header, Main, Nav } from '@components/layout';
 import { Popup } from '@components/page';
-import { Brand } from '@components/shared';
+import { Brand } from '@components/ui';
 import { AsideProvider, ModeProvider, ThemeProvider } from '@library/providers';
 import { HeaderStyles, MainStyles } from '@styles/layout';
 import { PageStyles } from '@styles/page';

@@ -1,8 +1,8 @@
 'use client';
 
-import { Icon, IconProps } from '@components/shared';
+import { Icon, IconProps } from '@components/ui';
 import { useTrigger } from '@library/hooks';
-import { DropdownStyles } from '@styles/shared';
+import { DropdownStyles } from '@styles/ui';
 import { ReactNode, useEffect } from 'react';
 
 interface Props {

@@ -1,7 +1,7 @@
 'use client';
 
 import { Header, Main } from '@components/layout';
-import { Icon } from '@components/shared';
+import { Icon } from '@components/ui';
 import { useAside, useTrigger } from '@library/hooks';
 import { HeaderStyles, MainStyles } from '@styles/layout';
 import { PageStyles, PopupStyles } from '@styles/page';

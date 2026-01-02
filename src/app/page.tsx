@@ -1,5 +1,5 @@
 import { Page } from '@components/page';
-import { NavItem, Theme } from '@components/shared';
+import { NavItem, Theme } from '@components/ui';
 
 export default function Landing() {
   return (
