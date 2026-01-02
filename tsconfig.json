@@ -11,6 +11,7 @@
     "noEmit": true,
     "paths": {
       "@/*": ["./src/*"],
+      "@components/handler": ["./src/exports/components/handler"],
       "@components/layout": ["./src/exports/components/layout"],
       "@components/page": ["./src/exports/components/page"],
       "@components/ui": ["./src/exports/components/ui"],
@@ -19,6 +20,7 @@
       "@library/contexts": ["./src/exports/library/contexts"],
       "@library/hooks": ["./src/exports/library/hooks"],
       "@library/providers": ["./src/exports/library/providers"],
+      "@styles/handler": ["./src/exports/styles/handler"],
       "@styles/layout": ["./src/exports/styles/layout"],
       "@styles/page": ["./src/exports/styles/page"],
       "@styles/ui": ["./src/exports/styles/ui"]
