@@ -1,3 +1,62 @@
+# [1.1.0](https://github.com/mrgithaka/claw/compare/v1.0.0...v1.1.0) (2026-01-03)
+
+
+### Bug Fixes
+
+* **`/src/app`:** update `NavItem` href for Account link in `page.tsx` ([b1d7637](https://github.com/mrgithaka/claw/commit/b1d7637bfb0172f3e480fefdba8bc7b34e59e8aa))
+
+
+### Features
+
+* **`.claw/figma`:** add new Figma logo file `logo.fig` ([3bb3096](https://github.com/mrgithaka/claw/commit/3bb3096f9a720fc4bcccea257e1b6d0b43ab16ce))
+* **`/src/app/site/public/authentication/login`:** add login page in `page.tsx` ([ae6f5b5](https://github.com/mrgithaka/claw/commit/ae6f5b5c5f4aa4feb7c3cd2a5f71912b99c19861))
+* **`/src/components/handler`:** add `Login.tsx` handler component ([cce76f5](https://github.com/mrgithaka/claw/commit/cce76f56b1e7c9752eb82efd237254fe615e50e5))
+* **`/src/components/handler`:** add `Otp.tsx` handler component ([7f368f6](https://github.com/mrgithaka/claw/commit/7f368f6a890a0e35d9e3b8cbc2c4170c34a1ee65))
+* **`/src/components/handler`:** add `Recover.tsx` handler component ([1f14b5a](https://github.com/mrgithaka/claw/commit/1f14b5aa9fac65bd359211d19a6140a4862e54fe))
+* **`/src/components/handler`:** add `Register.tsx` handler component ([1aaecaf](https://github.com/mrgithaka/claw/commit/1aaecafdd751f9e3f36f6134cbc3e595193c780c))
+* **`/src/components/handler`:** add `Reset.tsx` handler component ([154f24f](https://github.com/mrgithaka/claw/commit/154f24f5755a7dd82c4823835d17a10d4f2253a3))
+* **`/src/library/hooks`:** add `useLogin.ts` hook for login handling ([aa3966d](https://github.com/mrgithaka/claw/commit/aa3966ddab941043b173486f9531d1a87eb69624))
+* **`/src/library/hooks`:** add `useOtp.ts` hook for OTP form handling ([8126169](https://github.com/mrgithaka/claw/commit/8126169731346ac6a14f04f44a791eff439813e7))
+* **`/src/library/hooks`:** add `useRecover.ts` hook for password recovery ([0bb44cf](https://github.com/mrgithaka/claw/commit/0bb44cf591e7364bf3c12a4dbcfb1e481359a177))
+* **`/src/library/hooks`:** add `useRegister.ts` hook for registration handling ([87ee499](https://github.com/mrgithaka/claw/commit/87ee49919079a68d8ac0283cb91331343e712ef2))
+* **`/src/library/hooks`:** add `useReset.ts` hook for password reset ([14c9142](https://github.com/mrgithaka/claw/commit/14c914207c728af3c8deb033a38e270400584a2b))
+* **`public/icons`:** add light and dark icon set including `analytics.svg` ([779e0bc](https://github.com/mrgithaka/claw/commit/779e0bcb6c63dc0a28517fb23abf51f304917015))
+* **`src/app/site/private/authentication/otp`:** add OTP page in `page.tsx` ([ec423e2](https://github.com/mrgithaka/claw/commit/ec423e21fa1366a54710aa86272022c03445ca08))
+* **`src/app/site/private/authentication/recover`:** add account recovery page in `page.tsx` ([3d6aad4](https://github.com/mrgithaka/claw/commit/3d6aad4e817a9e4a6c5d154dc1ed508f1359b119))
+* **`src/app/site/public/authentication/login`:** add navigation items to `page.tsx` ([90c9b1b](https://github.com/mrgithaka/claw/commit/90c9b1bbdd47d3b2f0df01865b682b5210de99f2))
+* **`src/app/site/public/authentication/register`:** add registration page in `page.tsx` ([2250cb4](https://github.com/mrgithaka/claw/commit/2250cb414e521f5ce45cdaaeb1a6c419843f04d0))
+* **`src/app/site/public/authentication/reset`:** add password reset page in `page.tsx` ([4877654](https://github.com/mrgithaka/claw/commit/48776540bc176169562932dac9d48a589df135b2))
+* **`src/app`:** add navigation items to landing page in `page.tsx` ([79fd491](https://github.com/mrgithaka/claw/commit/79fd49119e71e1ee55a51ecb3cf0959dbcf9901c))
+* **`src/app`:** add theme control to landing page in `page.tsx` ([ec17b1c](https://github.com/mrgithaka/claw/commit/ec17b1cb34a8ac65791705310323aa0b8c6f0b79))
+* **`src/components/layout`:** add collapsible sidebar in `Aside.tsx` ([55cb2a8](https://github.com/mrgithaka/claw/commit/55cb2a8839f01814831d702160b779eb00d015ab))
+* **`src/components/layout`:** add reusable layout wrapper in `Section.tsx` ([8492868](https://github.com/mrgithaka/claw/commit/8492868a1a74c21595041032973046133f333f90))
+* **`src/components/page`:** add `Dashboard` page component in `Dashboard.tsx` ([17930c9](https://github.com/mrgithaka/claw/commit/17930c955e8e3149221497390ec9527accd52c97))
+* **`src/components/page`:** add popup layout component in `Popup.tsx` ([a893671](https://github.com/mrgithaka/claw/commit/a8936711cd56113b3fb1cb2a993ba3d7090aaab6))
+* **`src/components/page`:** add popup support and aside provider in `Page.tsx` ([d3e8d33](https://github.com/mrgithaka/claw/commit/d3e8d331fb6bc7b59f364f048b8c2d37782ade09))
+* **`src/components/shared`:** add dropdown component in `Dropdown.tsx` ([213002e](https://github.com/mrgithaka/claw/commit/213002e0ab70ac59fdeb897274a4a8012ecb44b6))
+* **`src/components/shared`:** add flexible input component in `Input.tsx` ([d58b041](https://github.com/mrgithaka/claw/commit/d58b04194908b5f1f4d80e3d1d5d563180e1af26))
+* **`src/components/shared`:** add loading indicator component in `Loading.tsx` ([09de927](https://github.com/mrgithaka/claw/commit/09de9274ad95201294657ab55b68565507df8c10))
+* **`src/components/shared`:** add message display component in `Message.tsx` ([d37238b](https://github.com/mrgithaka/claw/commit/d37238bbca6d341d4f3b5d0a1aad8975c0a20ffd))
+* **`src/components/shared`:** add navigation group wrapper in `NavGroup.tsx` ([5814f72](https://github.com/mrgithaka/claw/commit/5814f7246718157c2df2d6a1eeace819f57acaa7))
+* **`src/components/shared`:** add navigation item component in `NavItem.tsx` ([246ead5](https://github.com/mrgithaka/claw/commit/246ead549769f293d6ef69b8f7a87b0725ad338e))
+* **`src/components/shared`:** add reusable form wrapper in `Form.tsx` ([0a8d30d](https://github.com/mrgithaka/claw/commit/0a8d30d3b35454782cabd5075c9e2f65cdac5b23))
+* **`src/exports/components`:** add `Aside` component to layout exports ([16d5a6e](https://github.com/mrgithaka/claw/commit/16d5a6ec33024b813907decc6a3fdb1cb55555e1))
+* **`src/exports/components`:** add dashboard export in `page.ts` ([146aae2](https://github.com/mrgithaka/claw/commit/146aae2126a8bdb6b2c05ea94a258250c1da1b35))
+* **`src/exports/components`:** export layout section component in `layout.ts` ([47d70ff](https://github.com/mrgithaka/claw/commit/47d70ff685b00ba5cc82d9ec2fdcc65a74b8ead2))
+* **`src/exports/styles`:** add aside layout styles in `layout.ts` ([f991a1d](https://github.com/mrgithaka/claw/commit/f991a1d13af88875c2d433feb6388cb7375d174f))
+* **`src/exports/styles`:** add dashboard page styles in `page.ts` ([ddbc0f7](https://github.com/mrgithaka/claw/commit/ddbc0f7f56cafa216607a9b1de0d0561224db3c5))
+* **`src/exports/styles`:** export section layout styles in `layout.ts` ([b784759](https://github.com/mrgithaka/claw/commit/b784759c3f0eafc69944b8376c66e7dca02e1ee5))
+* **`src/library/contexts`:** create AsideContext in `AsideContext.ts` ([0e85e49](https://github.com/mrgithaka/claw/commit/0e85e49979724d334e419e17fdc1fcc31a86479e))
+* **`src/library/hooks`:** add `useAside` hook for aside context in `useAside.ts` ([834cac8](https://github.com/mrgithaka/claw/commit/834cac851da73ca91c261ba00f647884d723d01a))
+* **`src/library/providers`:** add `AsideProvider` context provider in `AsideProvider.tsx` ([d38b48b](https://github.com/mrgithaka/claw/commit/d38b48bfa7a140a7c22c59c2f90e806cd95064b2))
+* **`src/styles/layout`:** add layout stylesheet in `Section.module.css` ([8df3829](https://github.com/mrgithaka/claw/commit/8df3829805b771195aa6570134eed71bfee9f635))
+* **`src/styles/layout`:** add responsive styles for `Aside.module.css` ([92d6341](https://github.com/mrgithaka/claw/commit/92d63410a49b87a59309fba2394dfd8166f09686))
+* **`src/styles/page`:** add CSS module for popup layout in `Popup.module.css` ([f143df4](https://github.com/mrgithaka/claw/commit/f143df4b85f81be080cb7d4561ce48883c51b0e5))
+* **`src/styles/page`:** add responsive dashboard styles in `Dashboard.module.css` ([a1b0416](https://github.com/mrgithaka/claw/commit/a1b04162125fa9ca2a4945ecec51a4cfa15c95ce))
+* **`src/styles/shared`:** add form styling in `Form.module.css` ([501778e](https://github.com/mrgithaka/claw/commit/501778e1e95a5602210385764f28cb27f88ef2d1))
+* **`src/styles/shared`:** add input styles in `Input.module.css` ([6e400cd](https://github.com/mrgithaka/claw/commit/6e400cd24949c91fd48da0132366144748b24691))
+* **`src/styles/shared`:** add navigation group styles in `NavGroup.module.css` ([ac4f86f](https://github.com/mrgithaka/claw/commit/ac4f86f4086c2d7f328f9c0af06cb08893a758c8))
+
 # 1.0.0 (2026-01-01)
 
 
