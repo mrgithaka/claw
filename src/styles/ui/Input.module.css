@@ -67,3 +67,8 @@
 .Error input {
   background-color: var(--accent);
 }
+
+.Input input::placeholder {
+  color: var(--foreground);
+  opacity: 0.3;
+}
