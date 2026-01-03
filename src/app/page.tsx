@@ -26,7 +26,7 @@ export default function Landing() {
           />
         </>
       }
-      popupItems={
+      modalItems={
         <>
           <Theme />
         </>

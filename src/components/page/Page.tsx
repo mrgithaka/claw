@@ -1,7 +1,7 @@
 'use client';
 
 import { Header, Main, Nav } from '@components/layout';
-import { Popup } from '@components/page';
+import { Modal } from '@components/page';
 import { Brand } from '@components/ui';
 import { AsideProvider, ModeProvider, ThemeProvider } from '@library/providers';
 import { HeaderStyles, MainStyles } from '@styles/layout';
@@ -11,10 +11,10 @@ import { ReactNode } from 'react';
 interface Props {
   navItems?: ReactNode;
   mainItems?: ReactNode;
-  popupItems?: ReactNode;
+  modalItems?: ReactNode;
 }
 
-export default function Page({ navItems, mainItems, popupItems }: Props) {
+export default function Page({ navItems, mainItems, modalItems }: Props) {
   return (
     <ModeProvider>
       <ThemeProvider>
@@ -23,7 +23,7 @@ export default function Page({ navItems, mainItems, popupItems }: Props) {
             <Header className={HeaderStyles.Page}>
               <Brand />
               <Nav>{navItems}</Nav>
-              <Popup>{popupItems}</Popup>
+              <Modal>{modalItems}</Modal>
             </Header>
             <Main className={MainStyles.Page}>{mainItems}</Main>
           </div>

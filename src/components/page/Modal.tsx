@@ -4,14 +4,14 @@ import { Header, Main } from '@components/layout';
 import { Icon } from '@components/ui';
 import { useAside, useTrigger } from '@library/hooks';
 import { HeaderStyles, MainStyles } from '@styles/layout';
-import { PageStyles, PopupStyles } from '@styles/page';
+import { ModalStyles, PageStyles } from '@styles/page';
 import { ReactNode, useEffect } from 'react';
 
 interface Props {
   children?: ReactNode;
 }
 
-export default function Popup({ children }: Props) {
+export default function Modal({ children }: Props) {
   const { trigger, pullTrigger } = useTrigger();
 
   const { setHidden } = useAside();
@@ -22,30 +22,30 @@ export default function Popup({ children }: Props) {
   }, [trigger, setHidden]);
 
   return (
-    <div className={PopupStyles.Popup}>
+    <div className={ModalStyles.Modal}>
       <div
-        className={PopupStyles.TriggerOff}
+        className={ModalStyles.TriggerOff}
         onClick={() => pullTrigger()}
       >
         <Icon
-          name='popup'
-          alt='Popup Icon'
+          name='modal'
+          alt='Modal Icon'
           size={16}
           inverted
         />
       </div>
       {trigger && (
-        <div className={PopupStyles.PopupItself}>
+        <div className={ModalStyles.ModalItself}>
           <div className={PageStyles.Page}>
             <Header className={HeaderStyles.Page}>
-              <div className={PopupStyles.Nav}></div>
+              <div className={ModalStyles.Nav}></div>
               <div
-                className={PopupStyles.TriggerOn}
+                className={ModalStyles.TriggerOn}
                 onClick={() => pullTrigger()}
               >
                 <Icon
-                  name='popup'
-                  alt='Popup Icon'
+                  name='modal'
+                  alt='Modal Icon'
                   size={16}
                 />
               </div>
