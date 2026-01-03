@@ -26,6 +26,7 @@
   align-items: center;
   justify-content: center;
   border: 2px solid var(--background);
+  z-index: 99;
 }
 
 .Loader {
