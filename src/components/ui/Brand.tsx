@@ -1,5 +1,5 @@
-import { Icon } from '@components/shared';
-import { BrandStyles } from '@styles/shared';
+import { Icon } from '@components/ui';
+import { BrandStyles } from '@styles/ui';
 
 export default function Brand() {
   return (

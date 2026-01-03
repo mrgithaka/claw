@@ -11,17 +11,19 @@
     "noEmit": true,
     "paths": {
       "@/*": ["./src/*"],
+      "@components/handler": ["./src/exports/components/handler"],
       "@components/layout": ["./src/exports/components/layout"],
       "@components/page": ["./src/exports/components/page"],
-      "@components/shared": ["./src/exports/components/shared"],
+      "@components/ui": ["./src/exports/components/ui"],
       "@fonts/static": ["./src/exports/fonts/static"],
       "@fonts/variable": ["./src/exports/fonts/variable"],
       "@library/contexts": ["./src/exports/library/contexts"],
       "@library/hooks": ["./src/exports/library/hooks"],
       "@library/providers": ["./src/exports/library/providers"],
+      "@styles/handler": ["./src/exports/styles/handler"],
       "@styles/layout": ["./src/exports/styles/layout"],
       "@styles/page": ["./src/exports/styles/page"],
-      "@styles/shared": ["./src/exports/styles/shared"]
+      "@styles/ui": ["./src/exports/styles/ui"]
     },
     "plugins": [
       {

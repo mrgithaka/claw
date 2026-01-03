@@ -1,8 +1,8 @@
 'use client';
 
-import { Icon } from '@components/shared';
+import { Icon } from '@components/ui';
 import { useMode, useTheme } from '@library/hooks';
-import { ThemeStyles } from '@styles/shared';
+import { ThemeStyles } from '@styles/ui';
 
 interface Props {
   hidden?: boolean;
