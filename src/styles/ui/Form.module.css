@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.Form * {
+  box-sizing: content-box;
+}
+
 .LogoIcon {
   padding-bottom: 56px;
 }
