@@ -1,5 +1,6 @@
 'use client';
 
+import { Section } from '@components/layout';
 import { Form, Input, Message } from '@components/ui';
 import { useRecover } from '@library/hooks';
 
@@ -8,33 +9,38 @@ export default function Recover() {
     useRecover();
 
   return (
-    <Form
-      method={handleSubmit}
-      loading={loading}
+    <Section
+      id='recover'
+      className='flex flex-col items-center h-full justify-center'
     >
-      {message && <Message>{message}</Message>}
-      <Input
-        type='password'
-        placeholder='<rgM_Xzv'
-        id='password'
-        label='Password'
-        value={formData.password}
-        method={handleChange}
-        fieldError={fieldError}
-      />
-      <Input
-        type='password'
-        placeholder='<rgM_Xzv'
-        id='confirmPassword'
-        label='Confirm Password'
-        value={formData.confirmPassword}
-        method={handleChange}
-        fieldError={fieldError}
-      />
-      <Input
-        type='submit'
-        value='Recover'
-      />
-    </Form>
+      <Form
+        method={handleSubmit}
+        loading={loading}
+      >
+        {message && <Message>{message}</Message>}
+        <Input
+          type='password'
+          placeholder='<rgM_Xzv'
+          id='password'
+          label='Password'
+          value={formData.password}
+          method={handleChange}
+          fieldError={fieldError}
+        />
+        <Input
+          type='password'
+          placeholder='<rgM_Xzv'
+          id='confirmPassword'
+          label='Confirm Password'
+          value={formData.confirmPassword}
+          method={handleChange}
+          fieldError={fieldError}
+        />
+        <Input
+          type='submit'
+          value='Recover'
+        />
+      </Form>
+    </Section>
   );
 }
