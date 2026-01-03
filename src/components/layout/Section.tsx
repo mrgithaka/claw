@@ -1,3 +1,4 @@
+import { SectionStyles } from '@styles/layout';
 import { ReactNode } from 'react';
 
 interface Props {
@@ -10,7 +11,7 @@ export default function Section({ children, id, className }: Props) {
   return (
     <section
       id={id}
-      className={className}
+      className={`${SectionStyles.Section} ${className || ''}`}
     >
       {children}
     </section>
