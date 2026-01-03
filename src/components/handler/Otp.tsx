@@ -1,5 +1,6 @@
 'use client';
 
+import { Section } from '@components/layout';
 import { Form, Input, Message } from '@components/ui';
 import { useOtp } from '@library/hooks';
 
@@ -8,24 +9,29 @@ export default function Otp() {
     useOtp();
 
   return (
-    <Form
-      method={handleSubmit}
-      loading={loading}
+    <Section
+      id='otp'
+      className='flex flex-col items-center h-full justify-center'
     >
-      {message && <Message>{message}</Message>}
-      <Input
-        type='text'
-        placeholder='3DYRLM'
-        id='otp'
-        label='OTP'
-        value={formData.otp}
-        method={handleChange}
-        fieldError={fieldError}
-      />
-      <Input
-        type='submit'
-        value='Submit'
-      />
-    </Form>
+      <Form
+        method={handleSubmit}
+        loading={loading}
+      >
+        {message && <Message>{message}</Message>}
+        <Input
+          type='text'
+          placeholder='3DYRLM'
+          id='otp'
+          label='OTP'
+          value={formData.otp}
+          method={handleChange}
+          fieldError={fieldError}
+        />
+        <Input
+          type='submit'
+          value='Submit'
+        />
+      </Form>
+    </Section>
   );
 }
