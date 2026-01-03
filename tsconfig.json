@@ -12,9 +12,12 @@
     "paths": {
       "@/*": ["./src/*"],
       "@components/handler": ["./src/exports/components/handler"],
+      "@components/handlers": ["./src/exports/components/handlers"],
       "@components/layout": ["./src/exports/components/layout"],
       "@components/page": ["./src/exports/components/page"],
+      "@components/policies": ["./src/exports/components/policies"],
       "@components/ui": ["./src/exports/components/ui"],
+      "@components/utilities": ["./src/exports/components/utilities"],
       "@fonts/static": ["./src/exports/fonts/static"],
       "@fonts/variable": ["./src/exports/fonts/variable"],
       "@library/contexts": ["./src/exports/library/contexts"],
