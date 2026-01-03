@@ -21,7 +21,7 @@ export default function Landing() {
           />
           <NavItem
             name='Account'
-            href='/'
+            href='/site/public/authentication/login'
             button
           />
         </>
