@@ -60,6 +60,7 @@ html[data-theme='dark'] {
   transition: color 1s ease;
   scrollbar-width: thin;
   scrollbar-color: var(--accent) transparent;
+  box-sizing: border-box;
 }
 
 body {
