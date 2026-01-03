@@ -1,6 +1,6 @@
 'use client';
 
-import { Icon, Theme } from '@components/shared';
+import { Icon, Theme } from '@components/ui';
 import { useTrigger } from '@library/hooks';
 import { NavStyles } from '@styles/layout';
 import { ReactNode } from 'react';
